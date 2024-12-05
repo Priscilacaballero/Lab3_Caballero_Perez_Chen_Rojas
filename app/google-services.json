@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "122129935674",
+    "project_id": "proy-final-3d9c8",
+    "storage_bucket": "proy-final-3d9c8.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:122129935674:android:4e3888d12e7418c88b3403",
+        "android_client_info": {
+          "package_name": "com.example.lab3_caballero_perez_chen_rojas"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBK81dt5AdGVszIjZlkhWJacdcScxSWqWw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

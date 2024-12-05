@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/funFactsTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:layout_marginBottom="16dp"
+        android:gravity="center"
+        android:text="Fun Facts"
+        android:textColor="@color/white"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/scrollView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:fillViewport="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/funFactsTitle">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="16dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:text="Fun Fact 1: La palabra 'karaoke' proviene de dos términos japoneses: 'kara', que significa vacío, y 'oke', que es la abreviación de orquesta. Es decir, karaoke se traduce como 'orquesta vacía', pues es la música sin la voz del cantante."
+                android:textColor="@color/rosa"
+                android:textSize="18sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:text="Fun Fact 2: En Japón, el karaoke es tan popular que existen bares y restaurantes donde puedes cantar durante horas, conocidos como 'karaoke boxes'. Estos lugares están diseñados para que los clientes se sientan como cantantes en un escenario privado."
+                android:textColor="@color/amarillo"
+                android:textSize="18sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:text="Fun Fact 3: En algunos países, como Filipinas, el karaoke se ha convertido en una actividad casi nacional. En ciertos lugares, los concursos de karaoke son eventos masivos y en algunas ciudades se transmiten por televisión."
+                android:textColor="@color/lavanda"
+                android:textSize="18sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:text="Fun Fact 4: El karaoke también ha demostrado ser terapéutico. Se usa en algunas terapias para ayudar a las personas a superar timidez o ansiedad, ya que cantar frente a otros puede aumentar la confianza y el bienestar emocional."
+                android:textColor="@color/rosa"
+                android:textSize="18sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:text="Fun Fact 5: El primer sistema de karaoke fue inventado en 1971 por Daisuke Inoue, un músico japonés. Curiosamente, nunca patentó su invención, perdiendo millones de dólares en posibles regalías."
+                android:textColor="@color/amarillo"
+                android:textSize="18sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:text="Fun Fact 6: En Corea del Sur, el karaoke es conocido como 'noraebang', que significa 'habitación de canciones'. Es una actividad común para socializar después del trabajo o la escuela."
+                android:textColor="@color/lavanda"
+                android:textSize="18sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:text="Fun Fact 7: Existen máquinas de karaoke que pueden calificar tus habilidades de canto basándose en el tono, el ritmo y la afinación. ¡Perfectas para competencias entre amigos!"
+                android:textColor="@color/rosa"
+                android:textSize="18sp" />
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

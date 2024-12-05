@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/amarillo"
+    tools:context=".IniciarActivity">
+
+
+    <EditText
+        android:id="@+id/editTextEmail"
+        android:layout_width="353dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="13dp"
+        android:layout_marginBottom="15dp"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:padding="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/editTextPassword"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextPassword"
+        android:layout_width="351dp"
+        android:layout_height="47dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="35dp"
+        android:hint="Contraseña"
+        android:inputType="textPassword"
+        android:padding="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/buttonLogin"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/buttonLogin"
+        android:layout_width="339dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginEnd="25dp"
+
+        android:backgroundTint="@color/black"
+        android:padding="10dp"
+        android:text="Iniciar sesión"
+        app:layout_constraintBottom_toTopOf="@+id/buttonGoogleLogin"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/buttonGoogleLogin"
+        android:layout_width="336dp"
+        android:layout_height="53dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="28dp"
+        android:backgroundTint="@color/lavanda"
+        android:padding="10dp"
+        android:text="Iniciar con Google"
+        app:layout_constraintBottom_toTopOf="@+id/textViewRegister"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewRegister"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="87dp"
+        android:layout_marginEnd="88dp"
+
+        android:layout_marginBottom="44dp"
+        android:padding="10dp"
+        android:text="¿No tienes cuenta? Regístrate"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="352dp"
+        android:layout_height="222dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/editTextEmail"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.548"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/notas" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

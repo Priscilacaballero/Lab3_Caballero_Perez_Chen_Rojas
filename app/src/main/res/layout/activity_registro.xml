@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/rosa"
+    tools:context=".RegistroActivity">
+
+    <EditText
+        android:id="@+id/editTextNombre"
+        android:layout_width="347dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="33dp"
+        android:layout_marginEnd="31dp"
+        android:layout_marginBottom="24dp"
+        android:hint="Nombre"
+        android:inputType="textPersonName"
+        android:padding="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/editTextApellido"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextApellido"
+        android:layout_width="349dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="33dp"
+        android:layout_marginEnd="29dp"
+        android:layout_marginBottom="19dp"
+        android:hint="Apellido"
+        android:inputType="textPersonName"
+        android:padding="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/editTextEmail"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextEmail"
+        android:layout_width="348dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="31dp"
+        android:layout_marginBottom="24dp"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:padding="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/editTextPassword"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextPassword"
+        android:layout_width="348dp"
+        android:layout_height="59dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="31dp"
+        android:layout_marginBottom="56dp"
+        android:hint="Contraseña"
+        android:inputType="textPassword"
+        android:padding="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/buttonRegister"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/buttonRegister"
+        android:layout_width="253dp"
+        android:layout_height="58dp"
+        android:layout_marginStart="79dp"
+        android:layout_marginEnd="79dp"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="@color/negro"
+        android:text="Crear cuenta"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/button2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginStart="76dp"
+        android:layout_marginEnd="77dp"
+        android:layout_marginBottom="28dp"
+        android:text="Registrarse"
+        android:textColor="@color/black"
+        android:textSize="50sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/editTextNombre"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="248dp"
+        android:layout_height="57dp"
+        android:layout_marginStart="81dp"
+        android:layout_marginEnd="82dp"
+        android:layout_marginBottom="32dp"
+        android:backgroundTint="@color/negro"
+        android:text="Regresar"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

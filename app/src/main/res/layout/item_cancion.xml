@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="4dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="8dp">
+
+        <!-- Imagen de la canción -->
+        <ImageView
+            android:id="@+id/imageCancion"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/adele" />
+
+        <!-- Contenedor de la información de la canción -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginStart="16dp">
+
+            <!-- Nombre de la canción -->
+            <TextView
+                android:id="@+id/nombreCancion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nombre Canción"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <!-- Artista -->
+            <TextView
+                android:id="@+id/artistaCancion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Artista"
+                android:textSize="14sp"
+                android:textColor="@android:color/darker_gray" />
+
+            <!-- Género y dificultad -->
+            <TextView
+                android:id="@+id/generoDificultadCancion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Género | Dificultad"
+                android:textSize="12sp"
+                android:textColor="@android:color/darker_gray" />
+
+        </LinearLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
